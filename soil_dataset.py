@@ -45,7 +45,7 @@ class Soil(Dataset):
 
 if __name__ == "__main__":
     cid = Soil(is_train=True)
-    dataloader = DataLoader(cid, batch_size=50, shuffle=True)
+    dataloader = DataLoader(cid, batch_size=1, shuffle=True)
 
     for line, timestamp, moisture, temperature  in dataloader:
         print(line)
